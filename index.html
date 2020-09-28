@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.css" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="icon" type="image/x-icon" href="assets/img/logo.svg" />
+        <link rel="icon" type="image/x-icon" href="assets/img/ds_logo.png" />
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
         <style>
@@ -26,65 +26,128 @@
                 <main>
                     <nav class="navbar navbar-marketing navbar-expand-lg bg-dark navbar-dark fixed-top">
                         <div class="container">
-                            <a class="navbar-brand text-white text-uppercase" href="index.html"><img class="img-fluid white" src="assets/img/logo.svg" width="auto" height="100%" />&nbsp;&nbsp;&nbsp;<span class="logo">Digital Studio</span></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
+                            <a class="navbar-brand text-white" href="index.html">
+                                Digital Studio
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i data-feather="menu"></i>
+                            </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ml-auto mr-lg-5">
                                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                                    <!--<li class="nav-item dropdown dropdown-lg no-caret">
-                                        <a class="nav-link dropdown-toggle" id="navbarDropdownPages" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Work<i class="fas fa-chevron-right dropdown-arrow"></i></a>
-                                        <div class="dropdown-menu dropdown-menu-right animated--fade-in-up" aria-labelledby="navbarDropdownPages">
+                                    <!--
+                                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                                    -->
+                                    <li class="nav-item dropdown dropdown-xl no-caret">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdownDemos" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Portfolio
+                                            <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right animated--fade-in-up mr-lg-n15" aria-labelledby="navbarDropdownDemos">
                                             <div class="row no-gutters">
-                                                <div class="col-lg-6 p-lg-5">
-                                                    <h6 class="dropdown-header text-primary">Clients</h6>
-                                                    <a class="dropdown-item" href="#">Free Soul</a><a class="dropdown-item" href="#">FlairNow</a>
-                                                    <div class="dropdown-divider border-0"></div>
+                                                <div class="col-lg-8 p-lg-3 bg-img-cover overlay overlay-dark overlay-70 d-none d-lg-block" style='background-image: url("assets/img/newark.jpg")'>
+                                                    <div class="d-flex h-100 w-100 align-items-center justify-content-center">
+                                                        <div class="text-white text-center z-1">
+                                                            <a class="btn btn-white btn-sm text-dark rounded-pill" href="https://github.com/digitalstudiodev">View GitHub</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="col-lg-6 p-lg-5">
-                                                    <h6 class="dropdown-header text-primary">Startups</h6>
-                                                    <a class="dropdown-item" href="page-blog-overview.html">Popsis</a><a class="dropdown-item" href="#">SuperPhysics</a>
-                                                    <div class="dropdown-divider border-0"></div>
+                                                <div class="col-lg-4 p-lg-5">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <h6 class="dropdown-header text-dark">Clients</h6>
+                                                            <a class="dropdown-item" href="https://flairnow.herokuapp.com/" target="_blank">Flair Now</a>
+                                                            <a class="dropdown-item" href="https://free-soul.herokuapp.com/" target="_blank">Free Soul</a>
+                                                            <div class="dropdown-divider border-0"></div>
+
+                                                            <h6 class="dropdown-header text-dark">Applications</h6>
+                                                            <a class="dropdown-item" href="#">Popsis</a>
+                                                            <div class="dropdown-divider border-0"></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>-->
+                                    </li>
                                     <li class="nav-item"><a class="nav-link tech-font" href="https://www.digitalstream.dev">Stream&nbsp;&nbsp;<span class="badge badge-pill badge-light">Blog</span></a></li>
                                 </ul>
-                                <a class="btn-danger btn rounded-pill px-4 ml-lg-4" href="contact.html">Contact Us<i class="fas fa-arrow-right ml-1"></i></a>
+                                <a class="btn-danger btn rounded-pill px-4 ml-lg-4" href="contact.html">Contact</a>
                             </div>
                         </div>
                     </nav>
-                    <header class="page-header page-header-dark bg-img-cover overlay overlay-80" style='background-image: url("assets/img/header.jpg")'>
-                        <div class="page-header-content py-5">
+                    <header class="page-header page-header-dark bg-dark">
+                        <div class="page-header-content py-5 my-5">
                             <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-xl-8 col-lg-10 text-center">
-                                        <div data-aos="fade-up">
-                                            <h1 class="page-header-title">Software Done Right!</h1>
-                                            <p class="page-header-text">Driven by three-dimensional thinking, we develop software solutions for organizations looking to transform and grow.</p>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6" data-aos="fade-up">
+                                        <h1 class="page-header-title">Software Done Right!</h1>
+                                        <p class="page-header-text mb-5">
+                                            Independent | Freelance Development
+                                        </p>
+                                        <p>
+                                            Hey, I'm Jose Dominguez, a student and software developer based in Newark, NJ. 
+                                        <p>
+                                        <p>
+                                            I enjoy building things with practical applications, whether that be websites, applications, data analysis, 
+                                            or anything in between. My goal is to always build products that provide easy-to-use, quality experiences.
+                                        </p>
+                                        <p class="mb-5">
+                                            I created Digital Studio to aggregate these projects and to have the ability to choose the projects that are interesting and meaningful to me. 
+                                        </p>
+                                        <div class="icon-list-social mb-5 text-white">
+                                            <a class="icon-list-social-link" href="https://www.instagram.com/digitalstudio.dev/"><i class="fab fa-instagram text-white"></i></a><a class="icon-list-social-link" href="https://www.facebook.com/digitalstudio.dev/"><i class="fab fa-facebook text-white"></i></a><a class="icon-list-social-link" href="https://github.com/digitalstudiodev"><i class="fab fa-github text-white"></i></a><a class="icon-list-social-link" href="https://www.linkedin.com/company/digitalstudio-dev/"><i class="fab fa-linkedin text-white"></i></a>
                                         </div>
+                                    </div>
+                                    <div class="col-lg-6 d-none d-lg-block" data-aos="fade-up" data-aos-delay="50">
+                                        <!--&#x1F680;-->
+                                        <img class="img-fluid text-center" src="assets/img/jd_memoji.png" width="auto" height="50%" />
+                                        <!--<div class="device-laptop text-gray-200 mt-n10" data-aos="fade-up">
+                                            <svg class="device-container" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="83.911 298.53 426.962 243.838"><path d="M474.843 516.208V309.886c0-6.418-4.938-11.355-11.354-11.355H131.791c-6.417 0-11.354 4.938-11.354 11.355v206.816H83.911v13.326c4.938 7.896 31.098 12.34 40.969 12.34h345.024c10.366 0 36.526-4.936 40.969-12.34v-13.326h-36.03v-.494zM134.26 313.341h326.762v203.361H134.26V313.341z"></path></svg>
+                                            <img class="device-screenshot" src="assets/img/screen_header_laptop.png" width="auto" height="100%" />
+                                        </div>-->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="svg-border-rounded text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        <div class="svg-border-waves text-light">
+                            <svg class="wave" style="pointer-events: none" fill="currentColor" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
+                                <defs>
+                                    <style>
+                                        .a {
+                                            fill: none;
+                                        }
+                                        .b {
+                                            clip-path: url(#a);
+                                        }
+                                        .d {
+                                            opacity: 0.5;
+                                            isolation: isolate;
+                                        }
+                                    </style>
+                                    <clippath id="a"><rect class="a" width="1920" height="75"></rect></clippath>
+                                </defs>
+                                <title>wave</title>
+                                <g class="b"><path class="c" d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48"></path></g>
+                                <g class="b"><path class="d" d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10"></path></g>
+                                <g class="b"><path class="d" d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24"></path></g>
+                                <g class="b"><path class="d" d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150"></path></g>
+                            </svg>
                         </div>
                     </header>
-                    <!--key services-->
-                    <section class="bg-white py-10">
+                    <!--tags-->
+                    <section class="bg-light py-10">
                         <div class="container" id="services">
-                            <div class="row text-center">
+                            <div class="row text-center py-5">
                                 <div class="col-lg-4 mb-5 mb-lg-0">
                                     <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4"><i data-feather="code"></i></div>
                                     <h2>Software Development</h2>
-                                    <p class="mb-0">Responsive web apps developed using Django, React, and other frameworks.</p>
+                                    <p class="mb-0">Responsive web apps developed using Django, React, and other modern frameworks.</p>
                                 </div>
                                 <div class="col-lg-4 mb-5 mb-lg-0">
                                     <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4"><i data-feather="cloud"></i></div>
                                     <h2>DevOps & Cloud</h2>
-                                    <p class="mb-0">Efficient and highly-scalable infrastructure through AWS, Heroku, and other cloud services.</p>
+                                    <p class="mb-0">Efficient and highly-scalable infrastructure through services on AWS, Heroku, and other cloud providers.</p>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4"><i data-feather="database"></i></div>
@@ -92,77 +155,47 @@
                                     <p class="mb-0">Using data visualization tools to provide an accessible way to see and understand trends, outliers, and patterns in data.</p>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                    <!--video-->
-                    <!--<section class="bg-dark py-10">
-                        <div class="container">
-                            <div class="row justify-content-center z-1">
-                                <div class="col-lg-8" data-aos="fade-up">
-                                    <div class="card lift mb-n15">
-                                        <div class="card-body p-2">
-                                            <div class="video overlay bg-img-cover rounded" style='background-image: url("https://source.unsplash.com/wD1LRb9OeEo/1500x900")'>
-                                                <a class="video-link" href="https://www.youtube.com/watch?v=_mr5YwPSY7Y" data-lity=""><i class="fas fa-play"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="row text-center py-5">
+                                <div class="col-lg-4 mb-5 mb-lg-0">
+                                    <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4"><i data-feather="layers"></i></div>
+                                    <h3>Built For Scale</h3>
+                                    <p class="mb-0">Products are designed with scability in mind, by using cloud services in order to provide resources and security.</p>
+                                </div>
+                                <div class="col-lg-4 mb-5 mb-lg-0">
+                                    <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4"><i data-feather="smartphone"></i></div>
+                                    <h3>Modern Responsive Design</h3>
+                                    <p class="mb-0">Carefully crafted, mobile-friendly, applications that will function beautifully on any device!</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4"><i data-feather="code"></i></div>
+                                    <h3>Complete Documentation</h3>
+                                    <p class="mb-0">All products, services, and tools come complete with documentation.</p>
                                 </div>
                             </div>
                         </div>
-                    </section>-->
-                    <!--banner-->
-                    <section class="bg-img-cover overlay overlay-80 py-10" style='background-image: url("assets/img/newark.jpg")'>
-                        <div class="container position-relative">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10">
-                                    <div class="display-4 text-center py-10 my-10 text-white">Creating a community of engaged co-workers <span class="text-danger">committed</span> to personal and professional <span class="text-danger">growth</span>.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!--clients-->
-                    <section class="bg-light py-10">
-                        <div class="container z-1">
-                            <h2 class="text-center py-2">Clients</h2>
-                            <p class="text-center py-2">Take a look at our recent work.</p>
-                            <div class="card-columns card-columns-portfolio">
-                                <a class="card card-portfolio" href="https://free-soul.herokuapp.com/">
-                                    <img class="card-img-top" src="assets/img/freesoul.png" alt="Free Soul Logo" />
-                                    <div class="card-body">
-                                        <div class="card-title">Free Soul</div>
-                                    </div>
-                                </a>
-                                <a class="card card-portfolio" href="https://flairnow.herokuapp.com/">
-                                    <img class="card-img-top" src="assets/img/flairnow_logo.png" alt="Flair Now Logo" />
-                                    <div class="card-body">
-                                        <div class="card-title">Flair Now</div>
-                                    </div>
-                                </a>
-                                <a class="card card-portfolio" href="#!">
-                                    <img class="card-img-top" src="assets/img/popsis_logo.png" alt="Popsis Logo" />
-                                    <div class="card-body">
-                                        <div class="card-title">Popsis</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="svg-border-rounded text-white mt-n15">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
-                        </div>
-                    </section>
-                    <!--cta-->
-                    <section class="bg-white py-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-xl-6 col-lg-8 col-md-10 text-center my-10 py-10">
-                                    <h2>Ready to get Started?</h2>
-                                    <p class="lead text-gray-500 mb-5">We'd love to hear from you about your needs. We are currently accepting new clients.</p>
-                                    <a class="btn btn-danger btn-marketing rounded-pill" href="contact.html">Contact us</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="svg-border-rounded text-dark">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        <div class="svg-border-waves text-dark">
+                            <svg class="wave" style="pointer-events: none" fill="currentColor" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
+                                <defs>
+                                    <style>
+                                        .a {
+                                            fill: none;
+                                        }
+                                        .b {
+                                            clip-path: url(#a);
+                                        }
+                                        .d {
+                                            opacity: 0.5;
+                                            isolation: isolate;
+                                        }
+                                    </style>
+                                    <clippath id="a"><rect class="a" width="1920" height="75"></rect></clippath>
+                                </defs>
+                                <title>wave</title>
+                                <g class="b"><path class="c" d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48"></path></g>
+                                <g class="b"><path class="d" d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10"></path></g>
+                                <g class="b"><path class="d" d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24"></path></g>
+                                <g class="b"><path class="d" d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150"></path></g>
+                            </svg>
                         </div>
                     </section>
                 </main>
@@ -172,7 +205,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-3">
-                                <div class="footer-brand text-white text-uppercase"><img class="img-fluid white" src="assets/img/logo.svg" width="auto" height="50%" />&nbsp;&nbsp;&nbsp;<span class="logo">Digital Studio</span></a></div>
+                                <div class="footer-brand text-white">Digital Studio</a></div>
                                 <div class="mb-3">Software Done Right!</div>
                                 <div class="icon-list-social mb-5">
                                     <a class="icon-list-social-link" href="https://www.instagram.com/digitalstudio.dev/"><i class="fab fa-instagram"></i></a><a class="icon-list-social-link" href="https://www.facebook.com/digitalstudio.dev/"><i class="fab fa-facebook"></i></a><a class="icon-list-social-link" href="https://github.com/digitalstudiodev"><i class="fab fa-github"></i></a><a class="icon-list-social-link" href="https://www.linkedin.com/company/digitalstudio-dev/"><i class="fab fa-linkedin"></i></a>
@@ -195,8 +228,6 @@
                                         <div class="text-uppercase-expanded text-xs mb-4">Digital Studio</div>
                                         <ul class="list-unstyled mb-0">
                                             <li class="mb-2"><a href="index.html">Home</a></li>
-                                            <li class="mb-2"><a href="about.html">About</a></li>
-                                            <li class="mb-2"><a href="services.html">Services</a></li>
                                             <li class="mb-2"><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </div>
@@ -206,11 +237,6 @@
                         <hr class="my-5" />
                         <div class="row align-items-center">
                             <div class="col-md-6 small">Copyright &copy; <a href="index.html">Digital Studio</a> 2020</div>
-                            <!--<div class="col-md-6 text-md-right small">
-                                <a href="javascript:void(0);">Privacy Policy</a>
-                                &middot;
-                                <a href="javascript:void(0);">Terms &amp; Conditions</a>
-                            </div>-->
                         </div>
                     </div>
                 </footer>
@@ -230,5 +256,7 @@
         </script>
         <!--tidio chat-->
         <script src="//code.tidio.co/qzfkiwrck3nn8mca1plltw5if2pn1wau.js" async></script>
+        <!--medium list-->
+        <script src="https://www.retainable.app/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
     </body>
 </html>
