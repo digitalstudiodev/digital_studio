@@ -24,7 +24,7 @@
         <div id="layoutDefault">
             <div id="layoutDefault_content">
                 <main>
-                    <nav class="navbar navbar-marketing navbar-expand-lg bg-dark navbar-dark fixed-top">
+                    <nav class="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-dark fixed-top">
                         <div class="container">
                             <a class="navbar-brand text-white" href="index.html">
                                 Digital Studio
@@ -35,10 +35,32 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ml-auto mr-lg-5">
                                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                                    <!--
-                                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                                    -->
+
+
+                                    <li class="nav-item dropdown dropdown-xl no-caret">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdownDemos" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Who We Are
+                                            <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right animated--fade-in-up mr-lg-n15" aria-labelledby="navbarDropdownDemos">
+                                            <div class="row no-gutters">
+                                                <div class="col-lg-8 p-lg-3 bg-img-cover overlay overlay-dark overlay-70 d-none d-lg-block" style='background-image: url("assets/img/about_us.jpeg")'>
+                                                </div>
+                                                <div class="col-lg-4 p-lg-5">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <h6 class="dropdown-header text-dark">Who We Are</h6>
+                                                            <a class="dropdown-item" href="about_us.html">About Us</a>
+                                                            <a class="dropdown-item" href="workflow.html">How We Work</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+
                                     <li class="nav-item dropdown dropdown-xl no-caret">
                                         <a class="nav-link dropdown-toggle" id="navbarDropdownDemos" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Portfolio
@@ -46,25 +68,20 @@
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right animated--fade-in-up mr-lg-n15" aria-labelledby="navbarDropdownDemos">
                                             <div class="row no-gutters">
-                                                <div class="col-lg-8 p-lg-3 bg-img-cover overlay overlay-dark overlay-70 d-none d-lg-block" style='background-image: url("assets/img/newark.jpg")'>
+                                                <div class="col-lg-8 p-lg-3 bg-img-cover overlay overlay-dark overlay-70 d-none d-lg-block" style='background-image: url("assets/img/desktop.jpeg")'>
                                                     <div class="d-flex h-100 w-100 align-items-center justify-content-center">
                                                         <div class="text-white text-center z-1">
-                                                            <a class="btn btn-white btn-sm text-dark rounded-pill" href="https://github.com/digitalstudiodev">View GitHub</a>
+                                                            <a class="btn btn-white btn-sm text-dark rounded-pill" href="https://github.com/digitalstudiodev">View On GitHub</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4 p-lg-5">
                                                     <div class="row">
                                                         <div class="col-lg-6">
-                                                            <h6 class="dropdown-header text-dark">Clients / Partners</h6>
-                                                            <a class="dropdown-item" href="https://www.flairnow.org/" target="_blank">Flair Now</a>
-                                                            <a class="dropdown-item" href="http://www.elpizofund.com/" target="_blank">Elpizo Fund</a>
-                                                            <!--<a class="dropdown-item" href="https://free-soul.herokuapp.com/" target="_blank">Free Soul</a>-->
-                                                            
-                                                            <div class="dropdown-divider border-0"></div>
-                                                            <h6 class="dropdown-header text-dark">Independent Apps</h6>
+                                                            <h6 class="dropdown-header text-dark">SaaS Apps</h6>
                                                             <a class="dropdown-item" href="https://www.physnotes.net/" target="_blank">PhysNotes</a>
                                                             <a class="dropdown-item" href="https://www.digitalvault.dev/" target="_blank">Digital Vault</a>
+                                                            <a class="dropdown-item" href="https://www.digitalpropertymanagement.app/" target="_blank">Iris, Property Managament</a>
                                                             <div class="dropdown-divider border-0"></div>
                                                         </div>
                                                     </div>
@@ -72,13 +89,14 @@
                                             </div>
                                         </div>
                                     </li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Case Studies</a></li>
                                     <li class="nav-item"><a class="nav-link tech-font" href="https://www.digitalstream.dev">Stream&nbsp;&nbsp;<span class="badge badge-pill badge-light">Blog</span></a></li>
                                 </ul>
                                 <a class="btn-danger btn rounded-pill px-4 ml-lg-4" href="contact.html">Contact</a>
                             </div>
                         </div>
                     </nav>
-                    <header class="page-header page-header-dark bg-dark">
+                    <header class="page-header page-header-dark bg-dark bg-img-cover overlay overlay-dark overlay-80" style='background-image: url("assets/img/desktop.jpeg")'>
                         <div class="page-header-content py-5">
                             <div class="container">
                                 <div class="row justify-content-center">
@@ -115,16 +133,31 @@
                             </svg>
                         </div>
                     </header>
+                    
                     <section class="bg-light py-10">
                         <div class="container">
-                            <form action="https://formspree.io/mledvwdz" method="POST">
-                                <div class="form-row">
-                                    <div class="form-group col-md-6"><label class="text-dark" for="inputName">Full name</label><input class="form-control py-4" id="inputName" type="text" placeholder="Full name" /></div>
-                                    <div class="form-group col-md-6"><label class="text-dark" for="inputEmail">Email</label><input class="form-control py-4" id="inputEmail" type="email" placeholder="name@example.com" /></div>
+                            <div class="row gx-5 align-items-center mb-10">
+                                <div class="col-lg-6 text-center mb-5 mb-lg-0">
+                                    <div class="section-preheading">Call Anytime</div>
+                                    <a href="#">(862) 722-3139</a>
                                 </div>
-                                <div class="form-group"><label class="text-dark" for="inputMessage">Message</label><textarea class="form-control py-3" id="inputMessage" type="text" placeholder="Enter your message..." rows="4"></textarea></div>
-                                <div class="text-center"><button class="btn btn-danger btn-marketing mt-4 rounded-pill" type="submit">Connect!</button></div>
-                            </form>
+                                <div class="col-lg-6 text-center">
+                                    <div class="section-preheading">Email Us</div>
+                                    <a href="mailto:support@digitalstudio.dev">support@digitalstudio.dev</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <form action="https://formspree.io/mledvwdz" method="POST">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6"><label class="text-dark" for="inputName">Full name</label><input class="form-control py-4" id="inputName" type="text" placeholder="Full name" /></div>
+                                            <div class="form-group col-md-6"><label class="text-dark" for="inputEmail">Email</label><input class="form-control py-4" id="inputEmail" type="email" placeholder="name@example.com" /></div>
+                                        </div>
+                                        <div class="form-group"><label class="text-dark" for="inputMessage">Message</label><textarea class="form-control py-3" id="inputMessage" type="text" placeholder="Enter your message..." rows="4"></textarea></div>
+                                        <div class="text-center"><button class="btn btn-danger btn-marketing mt-4 rounded-pill" type="submit">Connect!</button></div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                         <div class="svg-border-waves text-dark">
                             <svg class="wave" style="pointer-events: none" fill="currentColor" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
@@ -181,6 +214,8 @@
                                         <div class="text-uppercase-expanded text-xs mb-4">Digital Studio</div>
                                         <ul class="list-unstyled mb-0">
                                             <li class="mb-2"><a href="index.html">Home</a></li>
+                                            <li class="mb-2"><a href="about_us.html">About Us</a></li>
+                                            <li class="mb-2"><a href="workflow.html">How We Work</a></li>
                                             <li class="mb-2"><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </div>
